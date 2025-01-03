@@ -1,128 +1,116 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4e1b2; /* Light muted yellow */
-    color: #4a4a4a; /* Muted dark gray */
-    line-height: 1.6;
+  font-family: 'Fredoka One', sans-serif;
+  background-color: #f7e0b9; /* Light warm yellow */
+  color: #5b3d29; /* Muted brown text */
 }
 
-h1, h2, p {
-    margin: 10px 0;
+a {
+  color: #f1a7b6; /* Soft peachy tone */
+  text-decoration: none;
 }
 
-/* Apply Fredoka One font to the title and slogan */
-.site-title, .slogan {
-    font-family: 'Fredoka One', sans-serif; /* Retro playful font */
+h1, h2, h3 {
+  color: #f7a100; /* Bright yellow */
 }
 
-/* Header Section */
-.header {
-    text-align: center;
-    background-color: #d18742; /* Muted orange-brown */
-    padding: 20px;
-    border-bottom: 5px solid #9e6f38; /* Deeper brown */
-    position: relative;
+/* Header Styles */
+#header {
+  background-color: #e95b4a; /* Retro orange */
+  padding: 30px 0;
+  text-align: center;
 }
 
-.logo {
-    width: 120px;
-    height: auto;
-    transition: transform 0.3s ease;
+#logo {
+  font-size: 3em;
+  color: white;
 }
 
-.logo:hover {
-    transform: scale(1.1);
+#nav {
+  background-color: #5b3d29; /* Muted brown */
+  padding: 10px;
 }
 
-.site-title {
-    font-size: 3rem;
-    color: #ff6f00; /* Orange */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+#nav ul {
+  list-style: none;
+  text-align: center;
 }
 
-.slogan {
-    font-size: 1.2rem;
-    color: #6a4c32; /* Brownish orange */
-    margin-top: 5px;
+#nav ul li {
+  display: inline-block;
+  margin-right: 15px;
 }
 
-/* Main Section */
-.main {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f1e1c8; /* Very soft, light yellow */
+#nav ul li a {
+  color: white;
+  font-size: 1.2em;
 }
 
-h2 {
-    font-size: 2.5rem;
-    color: #9e6f38; /* Deeper brown */
-    text-transform: uppercase;
-    letter-spacing: 2px;
+/* Banner */
+#banner {
+  background: url('images/flower-power-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 80px 0;
+  text-align: center;
+  color: white;
 }
 
-.product-gallery {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    gap: 20px;
+#banner h2 {
+  font-size: 3em;
+  color: #f1a7b6;
 }
 
-.product {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Main Content */
+#main {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  margin: 20px;
 }
 
-.product:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+#main h2 {
+  color: #f7a100;
 }
 
-.product img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+/* Features Section */
+#features {
+  background-color: #f1e1c6; /* Muted yellow */
+  padding: 60px 0;
 }
 
-.product-title {
-    font-size: 1.5rem;
-    color: #d18742; /* Muted orange-brown */
-    margin-top: 10px;
+#features h2 {
+  color: #5b3d29;
 }
 
-/* Footer Section */
-.footer {
-    background-color: #9e6f38; /* Brown */
-    text-align: center;
-    padding: 20px;
-    position: relative;
+#features .row {
+  display: flex;
+  justify-content: space-around;
 }
 
-footer p {
-    font-size: 1rem;
-    color: #fff;
+#features article {
+  background-color: #fff2e1; /* Soft peach */
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    background-color: #d18742; /* Muted orange-brown */
-    border: none;
-    border-radius: 25px;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+#features article h3 {
+  color: #f7a100;
 }
 
-button:hover {
-    background-color: #6a4c32; /* Dark brown */
+/* Footer */
+#footer {
+  background-color: #5b3d29; /* Dark brown */
+  color: white;
+  padding: 40px 0;
+}
+
+#footer h2 {
+  color: #f1a7b6;
+}
+
+#footer .menu {
+  text-align: center;
 }
