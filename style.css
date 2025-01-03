@@ -6,14 +6,14 @@
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace; /* Retro font style */
+  font-family: 'Cabin Sketch', cursive; /* Retro font */
   background-color: #f8e5b4; /* Muted yellow */
   color: #3a2c0e;
   line-height: 1.6;
 }
 
 h1, h2 {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Grand Hotel', cursive; /* Retro font for headings */
   color: #b56c3b;
 }
 
@@ -53,50 +53,62 @@ nav ul li a:hover {
   color: #ff6347;
 }
 
-.banner {
-  text-align: center;
-  padding: 80px 0;
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.products {
-  padding: 40px 0;
+.product-overview {
+  padding: 40px;
   text-align: center;
 }
 
-.products h2 {
+.product-overview .product-details {
+  background-color: #ffe066;
+  border-radius: 15px;
+  padding: 40px;
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-overview .product-details h1 {
   font-size: 36px;
+  color: #3a2c0e;
   margin-bottom: 20px;
 }
 
-.product-list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.product-overview .price {
+  font-family: 'Orbitron', sans-serif; /* Retro sci-fi font for price */
+  font-size: 24px;
+  color: #b56c3b;
+  margin-bottom: 20px;
 }
 
-.product-card {
-  background-color: #ffe066;
-  border-radius: 10px;
-  padding: 15px;
-  width: 200px;
-  margin: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.product-card img {
+.product-overview .product-image {
   width: 100%;
+  max-width: 400px;
   border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-.product-card p {
-  margin: 10px 0;
+.product-overview .product-description {
   font-size: 18px;
+  color: #3a2c0e;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.shop-now {
+  background-color: #ff6347;
+  color: white;
+  font-family: 'Orbitron', sans-serif; /* Retro font for buttons */
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.shop-now:hover {
+  background-color: #e53e32;
 }
 
 footer {
