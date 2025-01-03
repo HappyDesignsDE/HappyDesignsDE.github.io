@@ -1,99 +1,116 @@
-/* Reset some default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* General Styles */
+body {
+  font-family: 'Fredoka One', sans-serif;
+  background-color: #f7e0b9; /* Light warm yellow */
+  color: #5b3d29; /* Muted brown text */
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
+a {
+  color: #f1a7b6; /* Soft peachy tone */
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  color: #f7a100; /* Bright yellow */
 }
 
 /* Header Styles */
 #header {
-  background: #fff;
-  padding: 20px 0;
+  background-color: #e95b4a; /* Retro orange */
+  padding: 30px 0;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#logo img {
-  max-width: 150px;
-  height: auto;
+#logo {
+  font-size: 3em;
+  color: white;
 }
 
-/* Main Banner */
+#nav {
+  background-color: #5b3d29; /* Muted brown */
+  padding: 10px;
+}
+
+#nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+#nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+#nav ul li a {
+  color: white;
+  font-size: 1.2em;
+}
+
+/* Banner */
 #banner {
-  background: #ff7f50;
-  color: #fff;
-  padding: 60px 0;
+  background: url('images/flower-power-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 80px 0;
   text-align: center;
+  color: white;
 }
 
 #banner h2 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+  font-size: 3em;
+  color: #f1a7b6;
 }
 
-/* Footer Styles */
-#footer {
-  background-color: #222;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+/* Main Content */
+#main {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  margin: 20px;
 }
 
-#footer a {
-  color: #fff;
-  text-decoration: none;
+#main h2 {
+  color: #f7a100;
 }
 
-#footer ul.menu {
-  list-style-type: none;
+/* Features Section */
+#features {
+  background-color: #f1e1c6; /* Muted yellow */
+  padding: 60px 0;
 }
 
-#footer .copyright {
-  margin-top: 20px;
-  font-size: 0.9em;
+#features h2 {
+  color: #5b3d29;
 }
 
-/* Basic Container Layout */
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.row {
+#features .row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-around;
 }
 
-.col-4 {
-  flex: 1;
-  max-width: 30%;
-}
-
-.col-12-mobile {
-  max-width: 100%;
-}
-
-/* Buttons */
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #ff7f50;
-  color: white;
+#features article {
+  background-color: #fff2e1; /* Soft peach */
+  padding: 15px;
+  border-radius: 10px;
   text-align: center;
-  border-radius: 5px;
-  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.button:hover {
-  background-color: #e06b3f;
+#features article h3 {
+  color: #f7a100;
+}
+
+/* Footer */
+#footer {
+  background-color: #5b3d29; /* Dark brown */
+  color: white;
+  padding: 40px 0;
+}
+
+#footer h2 {
+  color: #f1a7b6;
+}
+
+#footer .menu {
+  text-align: center;
 }
