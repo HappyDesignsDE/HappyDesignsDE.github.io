@@ -1,65 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HappyDesignsDE - Beautiful Affirmations & Quotes on T-Shirts & Stationery</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-</head>
-<body>
-    <div class="page-wrapper">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HappyDesignsDE</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="HappyDesignsDE.png" alt="HappyDesignsDE Logo" class="logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <!-- Header Section -->
-        <header id="header">
-            <div class="logo-container">
-                <img src="HappyDesignsDE.png" alt="HappyDesignsDE Logo" class="logo">
-            </div>
-            <h1>HappyDesignsDE</h1>
-            <p>Beautiful t-shirts & stationery with mental health quotes and affirmations.</p>
-        </header>
+    <!-- Main Banner Section -->
+    <section class="banner" id="home">
+      <h1>Welcome to HappyDesignsDE!</h1>
+      <p>Discover inspiring t-shirts and stationery with mental health affirmations.</p>
+    </section>
 
-        <!-- Navigation Section -->
-        <nav id="nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Products Section -->
+    <section class="products" id="products">
+      <h2>Our Products</h2>
+      <div class="product-list">
+        <div class="product-card" onclick="window.location.href='product1.html'">
+          <img src="product1.jpg" alt="Product 1" />
+          <p>Inspirational Tee</p>
+          <p>$24.99</p>
+        </div>
+        <div class="product-card" onclick="window.location.href='product2.html'">
+          <img src="product2.jpg" alt="Product 2" />
+          <p>Affirmation Journal</p>
+          <p>$14.99</p>
+        </div>
+        <!-- Add more product cards here -->
+      </div>
+    </section>
 
-        <!-- Hero Section -->
-        <section id="hero">
-            <h2>Embrace Positivity with Our Collection</h2>
-            <p>Wear your affirmation and inspire others!</p>
-            <button id="shop-now" class="button">Shop Now</button>
-        </section>
-
-        <!-- Features Section -->
-        <section id="features" class="container">
-            <div class="feature-item">
-                <h3>Affirmations that Inspire</h3>
-                <p>Our products feature uplifting mental health quotes.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Vibrant & Retro Designs</h3>
-                <p>Each design is infused with warm, 70s-inspired colors.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Perfect for Everyday Wear</h3>
-                <p>Our tees and stationery are made for comfort and style.</p>
-            </div>
-        </section>
-
-        <!-- Footer Section -->
-        <footer id="footer">
-            <div class="footer-content">
-                <p>&copy; 2025 HappyDesignsDE. All Rights Reserved.</p>
-                <p>Follow us: <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Facebook</a></p>
-            </div>
-        </footer>
-
-    </div>
-</body>
+    <!-- Footer Section -->
+    <footer id="contact">
+      <p>&copy; 2025 HappyDesignsDE. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
