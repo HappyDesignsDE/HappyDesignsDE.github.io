@@ -48,7 +48,7 @@ h1, h2, h3 {
 
 /* Banner */
 #banner {
-  background: url('images/flower-power-bg.jpg') no-repeat center center fixed;
+  background: url('assets/image/flower-power-bg.jpg') no-repeat center center fixed;
   background-size: cover;
   padding: 80px 0;
   text-align: center;
