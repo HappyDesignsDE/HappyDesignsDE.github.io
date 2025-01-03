@@ -1,119 +1,147 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Global styles */
 body {
-  font-family: 'Cabin Sketch', cursive; /* Retro font */
-  background-color: #f8e5b4; /* Muted yellow */
-  color: #3a2c0e;
-  line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f2e1; /* Light yellow background */
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2 {
-  font-family: 'Grand Hotel', cursive; /* Retro font for headings */
-  color: #b56c3b;
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #6a4e1e; /* Dark yellow-brown color */
+    text-align: center;
 }
 
+button {
+    background-color: #f6b93b; /* Warm yellow */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #f39c12; /* Slightly darker yellow */
+}
+
+/* Header */
 header {
-  background-image: url('flower-power-bg.jpg');
-  background-size: cover;
-  padding: 50px 0;
-  text-align: center;
-  color: white;
+    background-color: #f6b93b;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo-container img {
-  width: 150px;
-  margin-bottom: 20px;
+header .logo-container img {
+    width: 120px;
+    height: auto;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 10px;
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-nav ul li {
-  margin: 0 20px;
+.navbar ul li {
+    margin-left: 20px;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.navbar a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-nav ul li a:hover {
-  color: #ff6347;
+.navbar a:hover {
+    color: #f39c12; /* Darker yellow on hover */
 }
 
-.product-overview {
-  padding: 40px;
-  text-align: center;
+/* Hero Section */
+.hero {
+    background-color: #f39c12;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
 }
 
-.product-overview .product-details {
-  background-color: #ffe066;
-  border-radius: 15px;
-  padding: 40px;
-  width: 70%;
-  margin: 0 auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.hero button {
+    margin-top: 20px;
 }
 
-.product-overview .product-details h1 {
-  font-size: 36px;
-  color: #3a2c0e;
-  margin-bottom: 20px;
+/* Products Section */
+.products {
+    padding: 50px 0;
+    background-color: #f5f2e1;
 }
 
-.product-overview .price {
-  font-family: 'Orbitron', sans-serif; /* Retro sci-fi font for price */
-  font-size: 24px;
-  color: #b56c3b;
-  margin-bottom: 20px;
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.product-overview .product-image {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
 }
 
-.product-overview .product-description {
-  font-size: 18px;
-  color: #3a2c0e;
-  margin-bottom: 20px;
-  line-height: 1.8;
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.shop-now {
-  background-color: #ff6347;
-  color: white;
-  font-family: 'Orbitron', sans-serif; /* Retro font for buttons */
-  font-size: 20px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.product-card h3 {
+    color: #f39c12;
 }
 
-.shop-now:hover {
-  background-color: #e53e32;
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background-color: #f6b93b;
+    color: white;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #f5f2e1;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #3a2c0e;
-  color: white;
+    background-color: #f6b93b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Footer */
+footer p {
+    margin: 0;
 }
