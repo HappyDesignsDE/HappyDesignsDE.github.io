@@ -1,147 +1,140 @@
-/* Global styles */
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f2e1; /* Light yellow background */
-    color: #333;
-    margin: 0;
-    padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #F5E1A4; /* Muted pastel yellow */
+  color: #6B4F33; /* Warm brown */
+  background-image: url('flower-power-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
-h1, h2, h3 {
-    font-family: 'Georgia', serif;
-    color: #6a4e1e; /* Dark yellow-brown color */
-    text-align: center;
+/* Heading style */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Georgia', serif;
+  color: #F8D3A3; /* Pale pastel yellow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Header section */
+header {
+  text-align: center;
+  padding: 50px 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+
+header img {
+  width: 150px; /* Logo resizing */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Main title */
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Button styling */
 button {
-    background-color: #f6b93b; /* Warm yellow */
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: #F8D3A3;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  color: #6B4F33;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #f39c12; /* Slightly darker yellow */
+  background-color: #E0B78F;
 }
 
-/* Header */
-header {
-    background-color: #f6b93b;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Flex container for the products */
+.product-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 50px;
 }
 
-header .logo-container img {
-    width: 120px;
-    height: auto;
-}
-
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navbar ul li {
-    margin-left: 20px;
-}
-
-.navbar a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    color: #f39c12; /* Darker yellow on hover */
-}
-
-/* Hero Section */
-.hero {
-    background-color: #f39c12;
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-}
-
-.hero button {
-    margin-top: 20px;
-}
-
-/* Products Section */
-.products {
-    padding: 50px 0;
-    background-color: #f5f2e1;
-}
-
-.product-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
+/* Product Card */
 .product-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  text-align: center;
 }
 
 .product-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 12px;
 }
 
 .product-card h3 {
-    color: #f39c12;
+  margin: 20px 0;
+  font-size: 1.8rem;
 }
 
-/* About Section */
-.about {
-    padding: 50px 20px;
-    background-color: #f6b93b;
-    color: white;
+.product-card p {
+  font-size: 1.2rem;
+  color: #6B4F33;
 }
 
-/* Contact Section */
-.contact {
-    padding: 50px 20px;
-    background-color: #f5f2e1;
-}
-
-form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-form label {
-    font-weight: bold;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-footer {
-    background-color: #f6b93b;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.product-card button {
+  margin-top: 15px;
 }
 
 /* Footer */
+footer {
+  background-color: #6B4F33;
+  color: #F8D3A3;
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+footer a {
+  color: #F8D3A3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #F5E1A4;
+}
+
 footer p {
-    margin: 0;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 90%;
+  }
 }
