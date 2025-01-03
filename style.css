@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff8e1;
-    color: #333;
+    background-color: #f4e1b2; /* Light muted yellow */
+    color: #4a4a4a; /* Muted dark gray */
     line-height: 1.6;
 }
 
@@ -19,9 +19,9 @@ h1, h2, p {
 /* Header Section */
 .header {
     text-align: center;
-    background-color: #ffd54f;
+    background-color: #d18742; /* Muted orange-brown */
     padding: 20px;
-    border-bottom: 5px solid #ffca28;
+    border-bottom: 5px solid #9e6f38; /* Deeper brown */
     position: relative;
 }
 
@@ -37,13 +37,13 @@ h1, h2, p {
 
 .site-title {
     font-size: 3rem;
-    color: #ff6f00;
+    color: #ff6f00; /* Orange */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .slogan {
     font-size: 1.2rem;
-    color: #ff7043;
+    color: #6a4c32; /* Brownish orange */
     margin-top: 5px;
 }
 
@@ -51,73 +51,9 @@ h1, h2, p {
 .main {
     padding: 50px 20px;
     text-align: center;
-    background-color: #ffeb3b;
+    background-color: #f1e1c8; /* Very soft, light yellow */
 }
 
 h2 {
     font-size: 2.5rem;
-    color: #ff5722;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.product-gallery {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    gap: 20px;
-}
-
-.product {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.product img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.product-title {
-    font-size: 1.5rem;
-    color: #ff7043;
-    margin-top: 10px;
-}
-
-/* Footer Section */
-.footer {
-    background-color: #ffca28;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-}
-
-footer p {
-    font-size: 1rem;
-    color: #333;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    background-color: #ff5722;
-    border: none;
-    border-radius: 25px;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #ff7043;
-}
+    color: #9e6f38; /* Deeper b
