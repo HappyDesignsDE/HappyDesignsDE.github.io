@@ -24,16 +24,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Header section */
-header {
-  text-align: center;
-  padding: 50px 0;
-  background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #3E2C1C; /* Darker brown color for the heading */
 }
 
 header img {
-  width: 150px; /* Logo resizing */
+  width: 200px; /* Logo resizing */
   height: auto;
   margin-bottom: 20px;
 }
