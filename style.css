@@ -1,145 +1,107 @@
-/* Basic Reset */
+/* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Body and Background */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fff5e1; /* Warm yellow background */
-    color: #333;
-    line-height: 1.6;
-    padding: 0;
-    margin: 0;
+  font-family: 'Courier New', Courier, monospace; /* Retro font style */
+  background-color: #f8e5b4; /* Muted yellow */
+  color: #3a2c0e;
+  line-height: 1.6;
 }
 
-/* Page Wrapper */
-.page-wrapper {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+h1, h2 {
+  font-family: 'Arial', sans-serif;
+  color: #b56c3b;
 }
 
-/* Header */
-#header {
-    text-align: center;
-    padding: 40px;
-    background-color: #ffd700; /* Retro yellow */
+header {
+  background-image: url('flower-power-bg.jpg');
+  background-size: cover;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
 }
 
-#header .logo {
-    width: 150px;
-    height: auto;
+.logo-container img {
+  width: 150px;
+  margin-bottom: 20px;
 }
 
-#header h1 {
-    font-size: 3rem;
-    color: #ff6347; /* Tomato red */
-    margin: 20px 0;
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
 }
 
-#header p {
-    font-size: 1.2rem;
-    color: #fff;
+nav ul li {
+  margin: 0 20px;
 }
 
-/* Navigation */
-#nav {
-    background-color: #f4a300; /* Orange */
-    padding: 10px;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-#nav ul {
-    list-style: none;
-    text-align: center;
+nav ul li a:hover {
+  color: #ff6347;
 }
 
-#nav ul li {
-    display: inline-block;
-    margin: 0 20px;
+.banner {
+  text-align: center;
+  padding: 80px 0;
+  background: rgba(255, 255, 255, 0.8);
 }
 
-#nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
+.products {
+  padding: 40px 0;
+  text-align: center;
 }
 
-/* Hero Section */
-#hero {
-    background: #ff8c00; /* Warm orange */
-    padding: 50px 20px;
-    text-align: center;
-    color: white;
+.products h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
-#hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-#hero p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+.product-card {
+  background-color: #ffe066;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  margin: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#hero .button {
-    background-color: #ff6347; /* Tomato red */
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border: none;
-    cursor: pointer;
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-#hero .button:hover {
-    background-color: #e53e3e; /* Darker red */
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
 }
 
-/* Features Section */
-#features {
-    display: flex;
-    justify-content: space-between;
-    padding: 60px 20px;
-    background-color: #fff;
+.product-card p {
+  margin: 10px 0;
+  font-size: 18px;
 }
 
-.feature-item {
-    flex: 1;
-    text-align: center;
-    padding: 20px;
-}
-
-.feature-item h3 {
-    font-size: 1.8rem;
-    color: #ff6347;
-    margin-bottom: 10px;
-}
-
-.feature-item p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-/* Footer */
-#footer {
-    background-color: #ff6347; /* Tomato red */
-    text-align: center;
-    padding: 30px 20px;
-}
-
-#footer p {
-    color: white;
-    font-size: 1.1rem;
-}
-
-#footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-#footer a:hover {
-    text-decoration: underline;
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #3a2c0e;
+  color: white;
 }
