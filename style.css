@@ -114,3 +114,23 @@ h1, h2, h3 {
 #footer .menu {
   text-align: center;
 }
+
+/* Add this section for styling the logo */
+.brand-logo {
+  max-width: 250px; /* Adjust width according to your preference */
+  height: auto; /* Keeps the aspect ratio intact */
+  display: block; /* Makes the logo block level to avoid text flowing around it */
+  margin: 0 auto; /* Center the logo horizontally */
+}
+
+/* You can also add other styles for the header */
+#header h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#header p {
+  font-size: 1.2em;
+  color: #6a4e23; /* Muted brown/orange color for the text */
+  text-align: center;
+}
